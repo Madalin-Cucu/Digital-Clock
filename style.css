@@ -1,9 +1,38 @@
 body {
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
   background: url(/Resources/Images/background.jpg);
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+}
+
+.clock div {
+  margin: 5px;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background-color: yellow;
+  opacity: .6;
+  color: rgb(5, 17, 109);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
