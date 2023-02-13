@@ -7,13 +7,15 @@ body {
   height: 100vh;
   justify-content: center;
   background: url(/Resources/Images/background.jpg);
+  background-size: cover;
 }
 
 h2 {
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 14px;
+  font-size: 25px;
   text-align: center;
+  color: rgb(5, 17, 109);
 }
 
 .clock {
@@ -22,12 +24,13 @@ h2 {
 
 .clock div {
   margin: 5px;
+  position: relative;
 }
 
 .clock span {
   width: 100px;
   height: 80px;
-  background-color: yellow;
+  background-color: rgb(244, 117, 187);
   opacity: .6;
   color: rgb(5, 17, 109);
   display: flex;
@@ -35,4 +38,31 @@ h2 {
   align-items: center;
   font-size: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: rgb(244, 69, 165);
+  opacity: 0.7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background-color: rgb(244, 69, 165);
+  border-radius: 4px;
+}
+
+#hour, #minutes, #seconds {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
